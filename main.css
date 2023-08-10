@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1024px;
     width: 100%;
     margin: 36px  auto;
@@ -26,7 +26,7 @@ header h1 {
     align-items: center;
 }
 
-button{
+button {
     display:block;
     width: 100%;
     padding: 8px 0;
@@ -43,7 +43,7 @@ button{
     margin-bottom: 16px;
 }
 
-.form-campo label{
+.form-campo label {
     font-weight: bold;
     display: block;
 }
@@ -58,6 +58,6 @@ form {
     max-width: 360px;
 }
 
-form button{
+form button {
     max-width: 120px;
 }
