@@ -14,50 +14,43 @@
         <h1>Formulário de Cadastro</h1>
     </header>
     <section>
-    <div class="container">
-        <form>
-            <div class="form-campo">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-            </div>
-            <div class="form-campo">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone">
-            </div>
-            <div class="form-campo">
-                <label for="cpf">CPF:</label>
-                <input type="cpf" id="cpf" name="cpf">
-            </div>
-            <div class="form-campo">
-                <label for="endereço">Endereço completo:</label>
-                <input type="text" id="endereco" name="endereco">
-            </div>
-            <div class="form-campo">
-                <label for="cep">CEP:</label>
-                <input type="cep" id="cep" name="cep">
-            </div>
-            <button type="submit">Enviar</button>
+        <div class="container">
+            <form>
+                <div class= "form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="cpf" id="cpf" name="cpf">
+                </div>
+                <div class="form-campo">
+                    <label for="endereço">Endereço completo:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <div class="form-campo">
+                    <label for="cep">CEP:</label>
+                    <input type="cep" id="cep" name="cep">
+                </div>
+                <button type="submit">Enviar</button>
         </form>
     </div>
     </section>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.¡s"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.¡s"></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
-    <script>
+    <footer>        
+    </footer>
+    <script src= "https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.¡s"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.¡s"></script>
+    <script src="./jquery.mask.min.js"></script>
+    <script src="./jquery.validate.min.js"></script>
+    <script src="./messages_pt_BR.min.js"></script>
+    <script>    
         $(document).ready(function() {
-
-            alert("ola")
-
-            $('#telefone').mask('(00)00000-0000')
-
-            $('#cpf').mask('000.000.000-00')
-
-            $('#cep').mask('00000-000')
-
-            /*$('form').validate ({
+            $('form').validate ({
                 rules: {
                     nome: {
                         required: true
@@ -78,22 +71,14 @@
                     cep: {
                         required: true
                     }
-                },
-                messages: {
-                    nome: 'Por favor, insira seu nome'
-                },
-                submitHandler: function(form) {
-                    console.log(form)
-                },
-                invalidHandler: function(evento, validador) {
-                    let camposIncorretos = validador.numberOfInvalids();
-                    If (camposIncorretos) {
-                        alert(`Existem ${camposIncorretos} campos incorretos`)
-                    }
-                }                
-        })*/
+                }
+            })
+            $('#telefone').mask('(00)00000-0000')
+            $('#cpf').mask('000.000.000-00')
+            $('#cep').mask('00000-000')
+            
         })
     </script>        
-    </body>
+</body>
 </html>
 
