@@ -1,26 +1,19 @@
 $(document).ready(function () {
-    const nomes = [];
-
     $('#form-atividade').submit(function (e) {
         e.preventDefault();
         adicionaLinha();
-        atualizaTabela();
     });
 
-    $('tbody').click(function() {
-        marcarConcluida();
-    })
-
     function adicionaLinha() {
-        const inputNome = $('#nome-tarefa');
+        const inputNome = $("#nome-tarefa");
 
-        nomes.push(inputNome.val());
+        const linha = $(`<tr><td>${inputNome.val()}</td></tr>`)
 
-        let linha = '<tr>';
-        linha += `<td>${inputNome.val()}</td>`;
-        linha += '</tr>';
+        $(linha).click(function() {
+            $(linha).toggleClass("risco");
+        })
 
-        $('tbody').append(linha);
+        $("tbody").append(linha);
 
         inputNome.val('');
     }
